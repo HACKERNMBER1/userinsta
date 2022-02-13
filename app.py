@@ -26,7 +26,7 @@ import random
 
 a = Flask(__name__)
 
-@a.route('/user')
+@a.route('/')
 
 def khb():
 
