@@ -1,3 +1,23 @@
+
+
+
+
+
+
+
+
+            
+
+        
+
+
+
+
+            
+
+
+
+
 from flask import *
 
 from TSMRS import *
@@ -16,7 +36,7 @@ def khb():
 
     rdr = random.choice(k)
 
-    mo = rr+rr+'_'+rdr+rr+rdr
+    mo = rr + rr + '_' + rdr + rr + rdr
 
     s = check()
 
@@ -26,11 +46,11 @@ def khb():
 
         return {
 
-            'user':mo,
+            'user': mo,
 
-            'result':'true'
+            'result': 'true',
 
-            
+            'channel':'@lis_5_t'
 
         }
 
@@ -38,12 +58,14 @@ def khb():
 
         return {
 
-            'user':mo,
+            'user': mo,
 
-            'result':'False'
+            'result': 'False',
 
-            
+            'channel':'@lis_5_t'
 
         }
 
-a.run()
+if name == "__main__":
+
+    a.run(debug=True)
